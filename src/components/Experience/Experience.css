@@ -1,0 +1,128 @@
+.experience {
+    width: 100%;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.experience-description {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-description > h1 {
+    font-size: 3.5rem;
+    font-family: var(--primaryFont);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Always 2 cards per row */
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Responsive: 1 card per row on smaller screens */
+@media screen and (max-width: 768px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Experience card layout remains */
+.experience-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    border-radius: 20px;
+    height: 140px;
+    transition: background-color 200ms ease-in-out;
+    background-color: var(--cardBg); /* Optional variable */
+}
+
+/* Image inside card */
+.expcard-img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.expcard-img > img {
+    width: 36px;
+    pointer-events: none;
+}
+
+/* Text content */
+.experience-details {
+    margin-left: 0.6rem;
+}
+
+.experience-details > h6 {
+    font-family: var(--primaryFont);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.experience-details > h4 {
+    font-family: var(--primaryFont);
+    font-size: 1.225rem;
+    font-weight: 600;
+}
+
+.experience-details > h5 {
+    font-family: var(--primaryFont);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+/* Removed old .experience-image */
+
+@media screen and (max-width: 992px) {
+    .experience-description {
+        padding: 1rem;
+    }
+    .experience-description > h1 {
+        font-size: 3rem;
+    }
+    .experience-card {
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience-description > h1 {
+        font-size: 2.5rem;
+    }
+    .expcard-img {
+        width: 45px;
+        height: 45px;
+    }
+    .expcard-img > img {
+        width: 30px;
+    }
+    .experience-details > h6 {
+        font-size: 0.8rem;
+    }
+    .experience-details > h4 {
+        font-size: 1.1rem;
+    }
+    .experience-details > h5 {
+        font-size: 1.05rem;
+    }
+}

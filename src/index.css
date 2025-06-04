@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: 'BestermindRegular';
+  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf'); 
+  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf') format('embedded-opentype'), 
+       url('./assets/fonts/Bestermind/BestermindRegular.ttf')  format('truetype'), 
+}
+/* In your global CSS file (e.g., index.css, main.css, or App.css) */
+
+/* Option 1: A simple universal reset (use with caution, can be aggressive) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Crucial for consistent sizing */
+}
+
+/* Option 2: More targeted reset/normalize (better practice) */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll from margin collapse issues */
+}
+
+/* Common elements you might find useful to reset */
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+    margin-top: 0;
+    margin-bottom: 0; /* Remove default paragraph/heading margins */
+}
+ul, ol {
+    list-style: none; /* Remove bullet points/numbers */
+    padding-left: 0; /* Remove default list padding */
+}
+a {
+    text-decoration: none; /* Remove default underline from links */
+    color: inherit; /* Inherit color from parent by default */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below images */
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font: inherit; /* Inherit font styles */
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* scrollBar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #555;
+}
+::-webkit-scrollbar-thumb {
+    background: #555;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+img{
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none; 
+
+}
+
+
+@media screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    body {
+      overflow-x: hidden;
+    }
+}

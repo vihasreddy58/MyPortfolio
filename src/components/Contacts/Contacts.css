@@ -1,0 +1,17 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.contacts--container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.contacts-summary {
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: var(--primaryFont);
+}
