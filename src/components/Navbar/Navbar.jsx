@@ -30,7 +30,7 @@ function Navbar() {
             <span>Home</span>
           </Link>
           
-          <Link smooth to="/#education" className="nav-link-item">
+          <Link smooth to="/#resume" className="nav-link-item">
             <span>Education</span>
           </Link>
           <Link smooth to="/#skills" className="nav-link-item">
@@ -38,9 +38,6 @@ function Navbar() {
           </Link>
           <Link smooth to="/#projects" className="nav-link-item">
             <span>Projects</span>
-          </Link>
-          <Link smooth to="/#contacts" className="nav-link-item">
-            <span>Contact</span>
           </Link>
         </div>
 
