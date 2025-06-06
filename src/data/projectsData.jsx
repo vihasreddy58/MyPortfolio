@@ -1,8 +1,8 @@
 import one from '../assets/png/rfid.jpg'
 import two from '../assets/png/tt.png'
 import three from '../assets/png/rr.png'
-import four from '../assets/svg/projects/four.svg'
-import five from '../assets/svg/projects/five.svg'
+import four from '../assets/png/avid_minds.png'
+import five from '../assets/png/agri.png'
 
 export const projectsData = [
     {

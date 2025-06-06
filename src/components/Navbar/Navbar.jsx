@@ -22,7 +22,7 @@ function Navbar() {
     <nav className="navbar" style={{ backgroundColor: theme.primary }}>
       <div className="navbar-container">
         {/* Brand/Logo */}
-        <h1 style={{ color: theme.secondary }}>{shortname(headerData.name)}</h1>
+        <h1 style={{ color: theme.secondary }}>Vihas</h1>
 
         {/* Navigation Links - Now directly visible in a row */}
         <div className="nav-links-horizontal"> {/* New class for horizontal links */}

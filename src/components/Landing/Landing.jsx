@@ -54,8 +54,25 @@ function Landing() {
                 {/* RIGHT SIDE: Title, Description, and Buttons */}
                 <div className='landing--container-right'>
                     <div className='lcr--content' style={{ color: theme.tertiary }}>
-                        <h6>{headerData.title}</h6>
-                        <p>{headerData.desciption}</p> {/* This is the description from headerData */}
+                        <h6 style={{
+    fontSize: '1.5rem',
+    fontWeight: '600',
+    marginBottom: '1rem',
+    color: theme.primary,
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+}}>{headerData.title}</h6>
+
+                        <p style={{
+    fontSize: '1.2rem',
+    lineHeight: '1.8',
+    fontWeight: '400',
+    color: theme.tertiary80 || 'rgba(255,255,255,0.8)',
+    textAlign: 'justify',
+    marginTop: '1rem',
+    maxWidth: '90%',
+}}>{headerData.desciption}</p>
+ {/* This is the description from headerData */}
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
                                 <a href={headerData.resumePdf} download='resume' target='_blank' rel='noreferrer'>

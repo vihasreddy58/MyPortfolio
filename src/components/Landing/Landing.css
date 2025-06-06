@@ -23,7 +23,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    min-height: 100vh; /* Ensure it takes full viewport height */
+    
     box-sizing: border-box;
 }
 
@@ -142,7 +142,7 @@ body {
 .about {
     position: relative;
     width: 100%;
-    padding: 6rem 2rem; /* Generous padding for about section */
+    padding: 1rem 1rem; /* Generous padding for about section */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
